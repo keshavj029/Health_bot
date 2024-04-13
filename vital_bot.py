@@ -6,6 +6,8 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain, ConversationChain
 from langchain.memory import ConversationBufferMemory
 from fastapi.middleware.cors import CORSMiddleware
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 app = FastAPI()
 app.add_middleware(
