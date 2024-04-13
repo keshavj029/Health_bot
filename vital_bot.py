@@ -8,6 +8,7 @@ from langchain.memory import ConversationBufferMemory
 from fastapi.middleware.cors import CORSMiddleware
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
+export PYTHONWARNINGS=ignore
 
 app = FastAPI()
 app.add_middleware(
