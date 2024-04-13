@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 import os
 from pydantic import BaseModel
-from langchain.llms import GooglePalm
+from langchain_community.llms import GooglePalm
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain, ConversationChain
 from langchain.memory import ConversationBufferMemory
