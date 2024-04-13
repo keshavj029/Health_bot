@@ -1,4 +1,4 @@
-uvicorn==0.20.0
+uvicorn
 langchain==0.1.16
 langchain-community
 fastapi
