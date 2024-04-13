@@ -16,7 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-os.environ['GOOGLE_API_KEY'] = 'API_key'
+os.environ['GOOGLE_API_KEY'] = 'AIzaSyDpZ0Wv2pVRnaUyDDPyx13PejTPU5wN1W8'
 llm = GooglePalm(temperature=0.3)
 memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
 
